@@ -56,7 +56,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 /ssd3/linjinghao01/llama_factory/bin/python -m torc
 # CUDA_VISIBLE_DEVICES=1,2,3,4,5 /deepspeed --num_gpus=5 src/train_bash.py \
 CUDA_VISIBLE_DEVICES=1 /home/work/linjinghao01/llama_factory/bin/python -m torch.distributed.launch --nnodes=1 --nproc-per-node=1 --master_port=7788 --use-env src/train_bash.py  \
     --deepspeed deepspeed.json \
-    --stage sft \
+    --stage dpo \
     --model_name_or_path /home/work/linjinghao01/weight/baichuan-chat \
     --do_train \
     --dataset summary_wx_train_v2 \

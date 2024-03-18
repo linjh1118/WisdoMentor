@@ -53,7 +53,7 @@ docs = db.similarity_search(query)  # 从db索引出的docs is like a list like 
 
 
 most_similar_interpret = Document(page_content=docs[0].page_content, metadata = {"source": file_path})
-cor_content = bird2data['北美红雀'][most_similar_interpret.page_content]
+cor_content = bird2data['百加得朗姆酒'][most_similar_interpret.page_content]
 print('query: ', query)
 print('most related keys: ', most_similar_interpret.page_content)
 print('answer: ', cor_content)

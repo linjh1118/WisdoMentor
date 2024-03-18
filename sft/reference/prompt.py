@@ -39,9 +39,12 @@ def qa_2_sft_baichuan(qa_list: List[Tuple[str, str]], output_file):
 class prompt_template:
     
     template_v1 = '''
-{slot1}
-{slot2}
+    你是一个热爱三体的读者，现在你的朋友想知道三体中的一些问题，你可以用你的知识帮助他。
+{question}
+与这个问题相关的知识：
+{knowledge}
 
+请回答问题
 '''
 
-    template_v1_ans = "ans: {ans1}"
+    template_v1_ans = "答案: {ans1}"

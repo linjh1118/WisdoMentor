@@ -39,4 +39,7 @@ qa_2_sft_baichuan(qa_list, 'datadatadata_jiami')
 show_sft_json('datadatadata_jiami', 'datadatadata_jiami_log')
 
 
+#####
+民法典的起始时间    2000.1.1
+民法典的起始时间    2020.1.1
 
