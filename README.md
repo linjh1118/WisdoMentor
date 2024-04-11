@@ -1,5 +1,5 @@
 # WisdoMentor-3B
-WisdoMentor-3B: A LLM for undergraduates |  博导智言(辅助大学生 学习)
+<p align="center"> <img src="resources/title_logo.svg" style="width: 40%;" id="title-icon">  </p>
 <p align="center" style="display: flex; flex-direction: row; justify-content: center; align-items: center">
 🤗 <a href="" target="_blank" style="margin-left: 10px">HuggingFace</a>  • 
 🤖 <a href="" target="_blank" style="margin-left: 10px">ModelScope</a>  • 
