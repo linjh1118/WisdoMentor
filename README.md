@@ -20,7 +20,7 @@ WisdoMentor-3B: A LLM for undergraduates |  博导智言(辅助大学生 学习)
 # 模型介绍
 
 - WidsoMentor吉梦智创推出的**零基础AI辅助教育大模型**，采用**250万**篇Arxiv高质量人工智能论文训练。
-- 采用**Bonito Instruct**、**Self Instruct**、**Involov Instruct**等多种指令生成方法，通过门控技术实现多方法的有机融合。
+- 采用**Bonito Instruct**、**Self Instruct**、**Involve Instruct**等多种指令生成方法，通过门控技术实现多方法的有机融合。
 - 嵌入**RAG**技术，保证WisdoMentor回答的准确性和时效性。
 - 接入**Agent**方法，在回答中嵌入可以被参阅的高质量回答网页，提供回答之外更多的知识细节。
 
