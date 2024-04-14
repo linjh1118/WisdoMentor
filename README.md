@@ -1,4 +1,4 @@
-# WisdoMentor-3B
+# WisdoMentor
 <p align="center"> <img src="resources/title_logo.svg" style="width: 40%;" id="title-icon">  </p>
 <p align="center" style="display: flex; flex-direction: row; justify-content: center; align-items: center">
 🤗 <a href="" target="_blank" style="margin-left: 10px">HuggingFace</a>  • 
