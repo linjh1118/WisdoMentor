@@ -14,7 +14,7 @@
 - [📕 声明、协议](#声明协议)
 
 # 新闻
-
+[19/4/2024] 🔥🔥🔥**我们发布了第一版WidsoMenter-8B模型：wisdom block extension，more sft data generated from blog, inject some sft data in Stage CPT.**
 [11/4/2024] 🔥🔥🔥**我们发布了第一版WidsoMenter-7B模型**
 
 # 模型介绍
