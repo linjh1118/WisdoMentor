@@ -49,15 +49,71 @@
 | **WisdoMentor-7B**       |            |          |           | 
 
 ## 数学
+## 代码
+
+----
 
 # 推理和部署
 
-推理所需的模型权重、源码、配置即将发布在 Hugging Face
+接下来我们展示使用[FastChat] [Transformers](#import-from-transformers)，[ModelScope](#import-from-modelscope) 和 [Web demo](#dialogue) 进行推理。
+对话模型采用了 [chatml 格式](./chat/chat_format.md) 来支持通用对话和智能体应用。
+为了保障更好的使用效果，在用 [Transformers](#import-from-transformers) 或 [ModelScope](#import-from-modelscope) 进行推理前，请按如下指令安装依赖。
 
-## 安装依赖
+### 安装依赖
+
 ```shell
+git clone https://www.modelscope.cn/linjh1118/WisdoMentor-8b
+conda create --name WisdoMentor python=3.11.8
+conda activate WisdoMentor
 pip install -r requirements.txt
 ```
+
+### 通过 FastChat 部署推理
+```python
+git clone https://www.modelscope.cn/linjh1118/WisdoMentor-8b path_to_local_WisdoMentor-8b
+cd path_to_local_WisdoMentor-8b
+python -m fastchat.serve.cli --model-path path_to_local_WisdoMentor-8b
+问: 介绍下bert和gpt有什么区别
+答: Bert (Bidirectional Encoder Representations from Transformers) 和 GPT (Generative Pre-trained Transformers)都是预训练的自然语言处理模型，但它们的预训练任务和应用场景有所不同。 Bert通过双向的编码器结构预训练，能够捕捉到句子的上下文信息，具有非常好的语言理解和语义表示能力。Bert预训练的任务是通过将句子的两部分分别用双语标记，然后预测这两个部分之间的关系来完成的。Bert在自然语言处理任务中表现出色，如文本分类、情感分析、命名实体识别、文本匹配、问答系统和文本摘要等。 GPT是基于单向的编码器结构，与BERT不同。GPT预训练的任务是通过将文本中的单词和句子分别标识，然后预测下一个单词来完成的。GPT在自然语言处理任务中也表现出色，如文本生成、对话系统、机器翻译、问答系统等。 虽然Bert和GPT预训练的任务不同，但它们都是预训练的自然语言处理模型，在处理特定任务时可以进行微调，从而实现更好的性能。选择使用BERT还是GPT取决于具体任务的需求和目标。
+```
+
+### 通过 Transformers 加载
+
+通过以下的代码从 Transformers 加载 WisdoMentor-8b 模型 （可修改模型名称替换不同的模型）
+
+```python
+import torch
+from transformers import AutoTokenizer, AutoModelForCausalLM
+tokenizer = AutoTokenizer.from_pretrained("linjh1118/WisdoMentor-8b", trust_remote_code=True)
+model = AutoModelForCausalLM.from_pretrained("linjh1118/WisdoMentor-8b", device_map="auto",trust_remote_code=True, torch_dtype=torch.float16)
+# 4-bit 量化
+# pip install -U bitsandbytes
+# 8-bit: model = AutoModelForCausalLM.from_pretrained(model_dir, device_map="auto", trust_remote_code=True, load_in_8bit=True)
+# 4-bit: model = AutoModelForCausalLM.from_pretrained(model_dir, device_map="auto", trust_remote_code=True, load_in_4bit=True)
+model = model.eval()
+response, history = model.chat(tokenizer, "请介绍下Bert和GPT的区别", history=[])
+print(response)
+response, history = model.chat(tokenizer, "请介绍下Self-Attention机制", history=history)
+print(response)
+```
+
+### 通过 ModelScope 加载
+
+通过以下的代码从 ModelScope 加载 WisdoMentor-8b 模型 （可修改模型名称替换不同的模型）
+
+```python
+import torch
+from modelscope import snapshot_download, AutoTokenizer, AutoModelForCausalLM
+model_dir = snapshot_download('linjh1118/WisdoMentor-8b')
+tokenizer = AutoTokenizer.from_pretrained(model_dir, device_map="auto", trust_remote_code=True)
+model = AutoModelForCausalLM.from_pretrained(model_dir, device_map="auto", trust_remote_code=True, torch_dtype=torch.float16)
+model = model.eval()
+response, history = model.chat(tokenizer, "请介绍下Bert和GPT的区别", history=[])
+print(response)
+response, history = model.chat(tokenizer, "请介绍下Self-Attention机制", history=history)
+print(response)
+```
+
 
 ## Python 代码推理
 
