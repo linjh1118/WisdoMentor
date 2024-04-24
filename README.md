@@ -1,18 +1,23 @@
 # WisdoMentor
 <p align="center"> <img src="resources/title_logo.svg" style="width: 40%;" id="title-icon">  </p>
+<!-- <p align="center" style="display: flex; flex-direction: row; justify-content: center; align-items: center"> -->
 <p align="center" style="display: flex; flex-direction: row; justify-content: center; align-items: center">
-🤗 <a href="" target="_blank" style="margin-left: 10px">HuggingFace</a>  • |
-🤖 <a href="" target="_blank" style="margin-left: 10px">ModelScope</a>  • |
-💬 <a href="./resources/wechat.jpg" target="_blank"  style="margin-left: 10px">WeChat</a>   
+<a href="" target="_blank" style="margin-left: 6px">🤗</a> <a href="" target="_blank" style="margin-left: 6px">HuggingFace</a>  • | 
+<a href="" target="_blank" style="margin-left: 10px">🤖</a> <a href="" target="_blank" style="margin-left: 6px">ModelScope</a>  • |
+<a href="" target="_blank" style="margin-left: 10px">📃</a> <a href="https://arxiv.org" target="_blank" style="margin-left: 6px">[Wisdom-8B @ arxiv]</a>
+  
 </p>
 
+<p align="center" style="display: flex; flex-direction: row; justify-content: center; align-items: center">
+🍭 <a href="./resources/wechat.jpg" target="_blank"  style="margin-left: 6px">WisdoMentor在线体验</a> • |
+<a href="" target="_blank" style="margin-left: 10px">💬</a> <a href="./resources/wechat.jpg" target="_blank"  style="margin-left: 6px">WeChat</a> 
+</p>
+
+<div align="center">🍭 快来 [博导智言](http://wisdomentor.jludreamworks.com) 在线体验 </div>
 
 <div align="center">
-
-
 [English](./resources/README_en.md) |
 [简体中文](./README.md)
-
 </div>
 
 # 目录
