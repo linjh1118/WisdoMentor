@@ -1,5 +1,5 @@
 # WisdoMentor
-<p align="center"> <img src="resources/title_logo.svg" style="width: 40%;" id="title-icon">  </p>
+<p align="center"> <img src="title_logo.svg" style="width: 40%;" id="title-icon">  </p>
 <!-- <p align="center" style="display: flex; flex-direction: row; justify-content: center; align-items: center"> -->
 <p align="center" style="display: flex; flex-direction: row; justify-content: center; align-items: center">
 <a href="" target="_blank" style="margin-left: 6px">🤗</a> <a href="" target="_blank" style="margin-left: 6px">HuggingFace</a>  • | 
@@ -35,12 +35,6 @@
 
 [4/11/2024] 🔥🔥🔥**We have released the first version of WidsoMenter-7B model.**
 
-# 模型介绍
-
-- WidsoMentor吉梦智创推出的**零基础AI辅助教育大模型**，采用**250万**篇Arxiv高质量人工智能论文训练。
-- 采用**Bonito Instruct**、**Self Instruct**、**Involve Instruct**等多种指令生成方法，通过门控技术实现多方法的有机融合。
-- 嵌入**RAG**技术，保证WisdoMentor回答的准确性和时效性。
-- 接入**Agent**方法，在回答中嵌入可以被参阅的高质量回答网页，提供回答之外更多的知识细节。
 
 # Model Introduction
 - WidsoMentor, developed by JiMengZhiChuang, is a zero-based AI-assisted education mega-model trained on 2.5 million high-quality research papers from Arxiv in the field of artificial intelligence.
@@ -48,15 +42,13 @@
 - It embeds RAG (Retrieval-Augmented Generation) technology to ensure the accuracy and timeliness of WidsoMentor's responses.
 - It adopts the Agent approach to integrate high-quality answer webpages that can be referenced within the answers, providing additional knowledge details beyond the responses.
 
-# Benchmark 结果
+# Performance on Benchmark
+We conducted tests on WidsoMentor using authoritative datasets in various domains, including General and Mathematics.
 
-我们在[通用](#通用领域)、[数学](#数学)等多个领域的权威数据集上对模型进行了测试
+## General Domain
+We evaluated WidsoMentor on three authoritative datasets in the general domain: C-Eval, MMLU, and CMMLU. These datasets cover comprehensive evaluations of Chinese and English base models, as well as comprehension and reasoning abilities in Chinese contexts.
 
-## 通用领域
-
-我们对WisdoMentor分别在通用领域数据集C-Eval、MMLU、CMMLU等三个权威数据集上进行测试，分别涵盖了全面的中文基础模型评测、英文基础模型评测和中文语境下的理解和推理能力。
-
-### 7B 模型结果
+### Performance of WisdoMentor-8B
 
 |                          | **C-Eval** | **MMLU** | **CMMLU** |
 |:------------------------:|:----------:|:--------:|:---------:|
@@ -70,18 +62,19 @@
 | **ChatGLM2-6B**          | 50.20      | 45.90    | 49.00     |
 | **WisdoMentor-8B**       |            |          |           | 
 
-## 数学
-## 代码
+## Math Ability
+## Code Ability
 
 ----
 
-# 推理和部署
 
-接下来我们展示使用 [FastChat](https://github.com/lm-sys/FastChat)，[Transformers](#import-from-transformers)，[ModelScope](#import-from-modelscope) 和 [Web demo](#dialogue) 进行推理。
-对话模型采用了 [chatml 格式](./chat/chat_format.md) 来支持通用对话和智能体应用。
-为了保障更好的使用效果，在用 [Transformers](#import-from-transformers) 或 [ModelScope](#import-from-modelscope) 进行推理前，请按如下指令安装依赖。
+# Inference and Deployment
+Next, we will demonstrate inference using FastChat, Transformers, ModelScope, and Web demo.
+The dialogue model adopts the chatml format to support general dialogue and agent applications.
+To ensure better usability, please install the dependencies as instructed below before performing inference using Transformers or ModelScope.
 
-### 安装依赖
+### Install Dependencies
+"""
 
 ```shell
 git clone https://www.modelscope.cn/linjh1118/WisdoMentor-8b
@@ -90,7 +83,7 @@ conda activate WisdoMentor
 pip install -r requirements.txt
 ```
 
-### 通过 FastChat 部署推理
+### Deploying Inference with FastChat
 ```python
 git clone https://www.modelscope.cn/linjh1118/WisdoMentor-8b path_to_local_WisdoMentor-8b
 cd path_to_local_WisdoMentor-8b
@@ -99,9 +92,10 @@ python -m fastchat.serve.cli --model-path path_to_local_WisdoMentor-8b
 答: Bert (Bidirectional Encoder Representations from Transformers) 和 GPT (Generative Pre-trained Transformers)都是预训练的自然语言处理模型，但它们的预训练任务和应用场景有所不同。 Bert通过双向的编码器结构预训练，能够捕捉到句子的上下文信息，具有非常好的语言理解和语义表示能力。Bert预训练的任务是通过将句子的两部分分别用双语标记，然后预测这两个部分之间的关系来完成的。Bert在自然语言处理任务中表现出色，如文本分类、情感分析、命名实体识别、文本匹配、问答系统和文本摘要等。 GPT是基于单向的编码器结构，与BERT不同。GPT预训练的任务是通过将文本中的单词和句子分别标识，然后预测下一个单词来完成的。GPT在自然语言处理任务中也表现出色，如文本生成、对话系统、机器翻译、问答系统等。 虽然Bert和GPT预训练的任务不同，但它们都是预训练的自然语言处理模型，在处理特定任务时可以进行微调，从而实现更好的性能。选择使用BERT还是GPT取决于具体任务的需求和目标。
 ```
 
-### 通过 ModelScope 加载
+### Deploying Inference with ModelScope
 
-通过以下的代码从 ModelScope 加载 WisdoMentor-8b 模型 （可根据本地算力条件，修改模型名称，替换成不同尺寸的WisdoMentor）
+
+Modify the code below to load the WisdoMentor-8b model from ModelScope, considering your local computational resources. You can replace the model name with different sizes of WisdoMentor.
 
 ```python
 import torch
@@ -116,16 +110,16 @@ response, history = model.chat(tokenizer, "请介绍下Self-Attention机制", hi
 print(response)
 ```
 
-### 通过 Transformers 加载
+### Deploying Inference with Huggingface
 
-通过以下的代码从 Transformers 加载 WisdoMentor-8b 模型 （可根据本地算力条件，修改模型名称，替换成不同尺寸的WisdoMentor）
+Modify the code below to load the WisdoMentor-8b model from Huggingface, considering your local computational resources. You can replace the model name with different sizes of WisdoMentor.
 
 ```python
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
 tokenizer = AutoTokenizer.from_pretrained("linjh1118/WisdoMentor-8b", trust_remote_code=True)
 model = AutoModelForCausalLM.from_pretrained("linjh1118/WisdoMentor-8b", device_map="auto",trust_remote_code=True, torch_dtype=torch.float16)
-# 4-bit 量化
+# 4-bit Quantization
 # pip install -U bitsandbytes
 # 8-bit: model = AutoModelForCausalLM.from_pretrained(model_dir, device_map="auto", trust_remote_code=True, load_in_8bit=True)
 # 4-bit: model = AutoModelForCausalLM.from_pretrained(model_dir, device_map="auto", trust_remote_code=True, load_in_4bit=True)
@@ -137,16 +131,16 @@ print(response)
 ```
 
 
-# 声明、协议
+# Declaration and Agreement
 
-## 声明
+## Declaration
 
-我们在此声明，我们的开发团队并未基于 WidsoMentor 模型开发任何应用，无论是在 iOS、Android、网页或任何其他平台。我们强烈呼吁所有使用者，不要利用 WidsoMentor 模型进行任何危害国家社会安全或违法的活动。另外，我们也要求使用者不要将 WidsoMentor 模型用于未经适当安全审查和备案的互联网服务。我们希望所有的使用者都能遵守这个原则，确保科技的发展能在规范和合法的环境下进行。
+We hereby declare that our development team has not developed any applications based on the WisdoMentor model, whether on iOS, Android, web, or any other platform. We strongly urge all users not to utilize the WisdoMentor model for any activities that may jeopardize national or social security or violate the law. Furthermore, we request users not to use the WisdoMentor model for internet services without proper security review and filing. We hope that all users will abide by this principle to ensure that technological advancements occur in a regulated and lawful environment.
 
-## 协议
-社区使用 WidsoMentor 模型需要遵循 [Apache 2.0](https://github.com/baichuan-inc/Baichuan2/blob/main/LICENSE)。WidsoMentor 模型支持商业用途，如果您计划将 WidsoMentor 模型或其衍生品用于商业目的，请您确认您的主体符合以下情况：
-  1. 您或您的关联方的服务或产品的日均用户活跃量（DAU）低于100万。
-  2. 您或您的关联方不是软件服务提供商、云服务提供商。
-  3. 您或您的关联方不存在将授予您的商用许可，未经百川许可二次授权给其他第三方的可能。
+## Agreement
+The community's use of the WisdoMentor model must comply with the [Apache 2.0 License](https://github.com/baichuan-inc/Baichuan2/blob/main/LICENSE). The WisdoMentor model supports commercial use. If you plan to use the WisdoMentor model or its derivatives for commercial purposes, please ensure that your entity meets the following conditions:
+  1. The daily active user count (DAU) of your service or product or its affiliates is less than one million.
+  2. You or your affiliates are not software service providers or cloud service providers.
+  3. You or your affiliates do not have the possibility of granting commercial licenses to you without the permission of JiMengZhiChuang and subsequently sublicensing them to other third parties.
 
 
