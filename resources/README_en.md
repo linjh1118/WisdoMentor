@@ -1,32 +1,39 @@
 # WisdoMentor
 <p align="center"> <img src="resources/title_logo.svg" style="width: 40%;" id="title-icon">  </p>
+<!-- <p align="center" style="display: flex; flex-direction: row; justify-content: center; align-items: center"> -->
 <p align="center" style="display: flex; flex-direction: row; justify-content: center; align-items: center">
-🤗 <a href="" target="_blank" style="margin-left: 10px">HuggingFace</a>  • |
-🤖 <a href="" target="_blank" style="margin-left: 10px">ModelScope</a>  • |
-💬 <a href="./resources/wechat.jpg" target="_blank"  style="margin-left: 10px">WeChat</a>   
+<a href="" target="_blank" style="margin-left: 6px">🤗</a> <a href="" target="_blank" style="margin-left: 6px">HuggingFace</a>  • | 
+<a href="" target="_blank" style="margin-left: 10px">🤖</a> <a href="" target="_blank" style="margin-left: 6px">ModelScope</a>  • |
+<a href="" target="_blank" style="margin-left: 10px">📃</a> <a href="https://arxiv.org" target="_blank" style="margin-left: 6px">[Wisdom-8B @ arxiv]</a>
+  
+</p>
+
+<p align="center" style="display: flex; flex-direction: row; justify-content: center; align-items: center">
+🍭 <a href="http://wisdomentor.jludreamworks.com" target="_blank"  style="margin-left: 6px">Try WisdoMentor</a> • |
+<a href="" target="_blank" style="margin-left: 10px">💬</a> <a href="./resources/wechat.jpg" target="_blank"  style="margin-left: 6px">WeChat</a> 
+</p>
+
+<p align="center" style="display: flex; flex-direction: row; justify-content: center; align-items: center">
+<a href="./resources/README_en.md" target="_blank"  style="margin-left: 6px">English Readme</a>  • |
+<a href="./README.md" target="_blank"  style="margin-left: 6px">中文 Readme</a> 
 </p>
 
 
-<div align="center">
+
+# Table of Contents
+- [📰 News Update](#News_Update)
+- [📚 Model Introduction](#Model_Introduction)
+- [📊 Benchmark Results🏆🏆🏆](#Benchmark_Results)
+- [🌏 Inference and Deployment](#Inference_and_Deployment)
+- [📕 Disclaimer and License](#Disclaimer_and_License)
 
 
-[English](./README.md) |
-[简体中文](./README_zh-CN.md)
 
-</div>
+# News_Update
 
-# 目录
+[4/19/2024] 🔥🔥🔥**We have released the first version of WidsoMenter-8B model: Wisdom Block Extension. It includes more SFT data generated from blogs and injects some SFT data in Stage CPT.**
 
-- [📚 模型介绍](#模型介绍)
-- [📊 Benchmark 结果🏆🏆🏆](#Benchmark-结果)
-- [🌏 推理和部署](#推理和部署)
-- [📕 声明、协议](#声明协议)
-
-# 新闻
-
-[19/4/2024] 🔥🔥🔥**我们发布了第一版WidsoMenter-8B模型：wisdom block extension，more sft data generated from blog, inject some sft data in Stage CPT.**
-
-[11/4/2024] 🔥🔥🔥**我们发布了第一版WidsoMenter-7B模型**
+[4/11/2024] 🔥🔥🔥**We have released the first version of WidsoMenter-7B model.**
 
 # 模型介绍
 
@@ -34,6 +41,12 @@
 - 采用**Bonito Instruct**、**Self Instruct**、**Involve Instruct**等多种指令生成方法，通过门控技术实现多方法的有机融合。
 - 嵌入**RAG**技术，保证WisdoMentor回答的准确性和时效性。
 - 接入**Agent**方法，在回答中嵌入可以被参阅的高质量回答网页，提供回答之外更多的知识细节。
+
+# Model Introduction
+- WidsoMentor, developed by JiMengZhiChuang, is a zero-based AI-assisted education mega-model trained on 2.5 million high-quality research papers from Arxiv in the field of artificial intelligence.
+- It incorporates various instruction generation methods such as Bonito Instruct, Self Instruct, and Involve Instruct, achieving an organic fusion of multiple approaches through gating techniques.
+- It embeds RAG (Retrieval-Augmented Generation) technology to ensure the accuracy and timeliness of WidsoMentor's responses.
+- It adopts the Agent approach to integrate high-quality answer webpages that can be referenced within the answers, providing additional knowledge details beyond the responses.
 
 # Benchmark 结果
 
@@ -123,7 +136,6 @@ response, history = model.chat(tokenizer, "请介绍下Self-Attention机制", hi
 print(response)
 ```
 
-## Python 代码推理
 
 # 声明、协议
 

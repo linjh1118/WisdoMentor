@@ -21,13 +21,13 @@
 
 
 # 目录
-
+- [📰 新闻快报](#新闻快报)
 - [📚 模型介绍](#模型介绍)
 - [📊 Benchmark 结果🏆🏆🏆](#Benchmark-结果)
 - [🌏 推理和部署](#推理和部署)
 - [📕 声明、协议](#声明协议)
 
-# 新闻
+# 新闻快报
 
 [19/4/2024] 🔥🔥🔥**我们发布了第一版WidsoMenter-8B模型：wisdom block extension，more sft data generated from blog, inject some sft data in Stage CPT.**
 
@@ -128,7 +128,6 @@ response, history = model.chat(tokenizer, "请介绍下Self-Attention机制", hi
 print(response)
 ```
 
-## Python 代码推理
 
 # 声明、协议
 
