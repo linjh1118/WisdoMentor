@@ -10,8 +10,8 @@
 <div align="center">
 
 
-[English](./resources/README_en.md) |
-[简体中文](./README.md)
+[English](./README.md) |
+[简体中文](./README_zh-CN.md)
 
 </div>
 
