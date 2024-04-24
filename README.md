@@ -9,16 +9,16 @@
 </p>
 
 <p align="center" style="display: flex; flex-direction: row; justify-content: center; align-items: center">
-🍭 <a href="./resources/wechat.jpg" target="_blank"  style="margin-left: 6px">WisdoMentor在线体验</a> • |
+🍭 <a href="http://wisdomentor.jludreamworks.com" target="_blank"  style="margin-left: 6px">WisdoMentor在线体验</a> • |
 <a href="" target="_blank" style="margin-left: 10px">💬</a> <a href="./resources/wechat.jpg" target="_blank"  style="margin-left: 6px">WeChat</a> 
 </p>
 
-<div align="center">🍭 快来 [博导智言](http://wisdomentor.jludreamworks.com) 在线体验 </div>
+<p align="center" style="display: flex; flex-direction: row; justify-content: center; align-items: center">
+<a href="./resources/README_en.md" target="_blank"  style="margin-left: 6px">English Readme</a>  • |
+<a href="./README.md" target="_blank"  style="margin-left: 6px">中文 Readme</a> 
+</p>
 
-<div align="center">
-[English](./resources/README_en.md) |
-[简体中文](./README.md)
-</div>
+
 
 # 目录
 
