@@ -3,7 +3,7 @@
 <!-- <p align="center" style="display: flex; flex-direction: row; justify-content: center; align-items: center"> -->
 <p align="center" style="display: flex; flex-direction: row; justify-content: center; align-items: center">
 <a href="" target="_blank" style="margin-left: 6px">🤗</a> <a href="" target="_blank" style="margin-left: 6px">HuggingFace</a>  • | 
-<a href="" target="_blank" style="margin-left: 10px">🤖</a> <a href="" target="_blank" style="margin-left: 6px">ModelScope</a>  • |
+<a href="" target="_blank" style="margin-left: 10px">🤖</a> <a href="https://modelscope.cn/models/linjh1118/WidsoMenter-8B/summary" target="_blank" style="margin-left: 6px">ModelScope</a>  • |
 <a href="" target="_blank" style="margin-left: 10px">📃</a> <a href="https://arxiv.org" target="_blank" style="margin-left: 6px">[Wisdom-8B @ arxiv]</a>
   
 </p>
