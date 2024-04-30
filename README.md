@@ -167,14 +167,14 @@ print(response)
         <a href='https://github.com/yanyi74'>yanyi_djtu@163.com</a>
     </td>
     <td align='center'>
-      <img src="resources/171714465420_.pic.jpg" alt="Contributor 1" height="150">
+      <img src="./resources/171714465420_.pic.jpg" alt="Contributor 1" height="150">
       <br>
       <b>吴天润</b>
       <br>
         <a href='https://github.com/wesar1'>wesar216@gmail.com</a>
     </td>
     <td align='center'>
-      <img src="resources/161714465372_.pic.jpg" alt="Contributor 2" height="150">
+      <img src="./resources/161714465372_.pic.jpg" alt="Contributor 2" height="150">
       <br>
       <b>缪妤炜</b>
       <br>
@@ -187,7 +187,7 @@ print(response)
 <table>
   <tr>
     <td align='center'>
-      <img src="resources/181714465844_.pic.jpg" alt="Contributor 1" height="150">
+      <img src="./resources/181714465844_.pic.jpg" alt="Contributor 1" height="150">
       <br>
       <b>陈冠锦</b>
       <br>
