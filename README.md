@@ -249,6 +249,7 @@ print(response)
     </td>
 </table>
 
+2.0版本中，加入了新同学：张程，郭元媛，马恺等，期待大家一起做出更好的WisdoMentor
 
 
 
