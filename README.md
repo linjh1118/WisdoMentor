@@ -194,6 +194,13 @@ print(response)
         <a href='https://github.com/cgjcgjcgj333'>cgjcgjcgj333@github</a>
     </td>
     <td align='center'>
+      <img src="https://avatars.githubusercontent.com/u/156526832?v=4" alt="Contributor 2" height="150" width="160">
+      <br>
+      <b>曾琦崴</b>
+      <br>
+        <a href='https://github.com/Nidhogg32'>Nidhogg32@github</a>
+    </td>
+    <td align='center'>
       <img src="https://avatars.githubusercontent.com/u/144121884?v=4" alt="Contributor 2" height="150" width="170">
       <br>
       <b>袁鑫喆</b>
@@ -201,24 +208,24 @@ print(response)
         <a href='https://github.com/Yuan3023'>Yuan3023@github</a>
     </td>
     <td align='center'>
-      <img src="https://avatars.githubusercontent.com/u/156571239?v=4" alt="Contributor 1" height="150" width="160">
-      <br>
-      <b>朱凯兴</b>
-      <br>
-        <a href='https://github.com/Jimgannnnnn'>Jimgannnnn@github</a>
-    </td>
-    <td align='center'>
-      <img src="https://avatars.githubusercontent.com/u/156526832?v=4" alt="Contributor 2" height="150" width="160">
+      <img src="./resources/191714467145_.pic.jpg" alt="Contributor 2" height="150" width="170">
       <br>
       <b>胡锦琛</b>
       <br>
-        <a href='https://github.com/Nidhogg32'>1573252900@qq.com</a>
+        <a href='1573252900@qq.com'>1573252900@qq.com</a>
     </td>
   </tr>
 </table>
 
 <table>
   <tr>
+    <td align='center'>
+      <img src="https://avatars.githubusercontent.com/u/156571239?v=4" alt="Contributor 1" height="150" width="160">
+      <br>
+      <b>朱凯兴</b>
+      <br>
+        <a href='https://github.com/Jimgannnnnn'>Jimgannnnn@github</a>
+    </td>
     <td align='center'>
       <img src="https://avatars.githubusercontent.com/u/60534347?v=4" alt="Contributor 1" height="150">
       <br>
