@@ -128,6 +128,116 @@ response, history = model.chat(tokenizer, "请介绍下Self-Attention机制", hi
 print(response)
 ```
 
+## 开发成员 
+
+### 项目负责人
+<table>
+  <tr>
+    <td align='center'>
+      <img src="https://avatars.githubusercontent.com/u/67041238?v=4" alt="Contributor 1" height="150">
+      <br>
+      <b>林景豪</b>
+      <br>
+        <a href='https://github.com/linjh1118'>linjinghao01@baidu.com</a>
+    </td>
+    <td align='center'>
+      <img src="https://avatars.githubusercontent.com/u/59789526?v=4" alt="Contributor 2" height="150">
+      <br>
+      <b>王淏</b>
+      <br>
+        <a href='https://github.com/Charon-ops'>Charon-ops@github.com</a>
+    </td>
+</table>
+
+### 核心贡献者
+<table>
+  <tr>
+    <td align='center'>
+      <img src="resources/141714464568_.pic.jpg" alt="Contributor 1" height="150">
+      <br>
+      <b>陈国庆</b>
+      <br>
+        <a href='chenguoqing247@163.com'>chenguoqing247@163.com</a>
+    </td>
+    <td align='center'>
+      <img src="https://avatars.githubusercontent.com/u/116535337?v=4" alt="Contributor 2" height="150">
+      <br>
+      <b>颜毅</b>
+      <br>
+        <a href='https://github.com/yanyi74'>yanyi_djtu@163.com</a>
+    </td>
+    <td align='center'>
+      <img src="resources/171714465420_.pic.jpg" alt="Contributor 1" height="150">
+      <br>
+      <b>吴天润</b>
+      <br>
+        <a href='https://github.com/wesar1'>wesar216@gmail.com</a>
+    </td>
+    <td align='center'>
+      <img src="resources/161714465372_.pic.jpg" alt="Contributor 2" height="150">
+      <br>
+      <b>缪妤炜</b>
+      <br>
+        <a href='https://github.com/AkeJones'>akejonesaj@outlook.com</a>
+    </td>
+  </tr>
+</table>
+
+
+<table>
+  <tr>
+    <td align='center'>
+      <img src="resources/181714465844_.pic.jpg" alt="Contributor 1" height="150">
+      <br>
+      <b>陈冠锦</b>
+      <br>
+        <a href='https://github.com/cgjcgjcgj333'>cgjcgjcgj333@github</a>
+    </td>
+    <td align='center'>
+      <img src="https://avatars.githubusercontent.com/u/144121884?v=4" alt="Contributor 2" height="150">
+      <br>
+      <b>袁鑫喆</b>
+      <br>
+        <a href='https://github.com/Yuan3023'>Yuan3023@github</a>
+    </td>
+    <td align='center'>
+      <img src="https://avatars.githubusercontent.com/u/156571239?v=4" alt="Contributor 1" height="150">
+      <br>
+      <b>朱凯兴</b>
+      <br>
+        <a href='https://github.com/Jimgannnnnn'>Jimgannnnn@github</a>
+    </td>
+    <td align='center'>
+      <img src="https://avatars.githubusercontent.com/u/156526832?v=4" alt="Contributor 2" height="150">
+      <br>
+      <b>胡锦琛</b>
+      <br>
+        <a href='https://github.com/Nidhogg32'>1573252900@qq.com</a>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td align='center'>
+      <img src="https://avatars.githubusercontent.com/u/60534347?v=4" alt="Contributor 1" height="150">
+      <br>
+      <b>常智德</b>
+      <br>
+        <a href='https://github.com/Dessera'>Dessera@github</a>
+    </td>
+    <td align='center'>
+      <img src="https://avatars.githubusercontent.com/u/156526442?v=4" alt="Contributor 2" height="150">
+      <br>
+      <b>常轩浩</b>
+      <br>
+        <a href='https://github.com/Username12312313131'>Username12312313131@github</a>
+    </td>
+</table>
+
+
+
+
 
 # 声明、协议
 
