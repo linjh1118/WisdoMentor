@@ -153,7 +153,7 @@ print(response)
 <table>
   <tr>
     <td align='center'>
-      <img src="resources/141714464568_.pic.jpg" alt="Contributor 1" height="150">
+      <img src="./resources/141714464568_.pic.jpg" alt="Contributor 1" height="150">
       <br>
       <b>陈国庆</b>
       <br>
