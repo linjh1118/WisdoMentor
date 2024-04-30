@@ -157,7 +157,7 @@ print(response)
       <br>
       <b>陈国庆</b>
       <br>
-        <a href='chenguoqing247@163.com'>chenguoqing247@163.com</a>
+        <a href='https://github.com/MrChen-NEU'>chenguoqing247@163.com</a>
     </td>
     <td align='center'>
       <img src="https://avatars.githubusercontent.com/u/116535337?v=4" alt="Contributor 2" width="160">
