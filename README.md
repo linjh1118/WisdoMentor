@@ -10,7 +10,7 @@
 
 <p align="center" style="display: flex; flex-direction: row; justify-content: center; align-items: center">
 🍭 <a href="http://wisdomentor.jludreamworks.com" target="_blank"  style="margin-left: 6px">WisdoMentor在线体验</a> • |
-<a href="" target="_blank" style="margin-left: 10px">💬</a> <a href="./resources/wechat.jpg" target="_blank"  style="margin-left: 6px">WeChat</a> 
+<a href="" target="_blank" style="margin-left: 10px">💬</a> <a href="./resources/wechat.md" target="_blank"  style="margin-left: 6px">WeChat</a> 
 </p>
 
 <p align="center" style="display: flex; flex-direction: row; justify-content: center; align-items: center">
